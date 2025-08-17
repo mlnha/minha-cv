@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Lee's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Minha Lee</h1>
+            <p>Computer Science & Engineering student with a passion for Computer Vision and Autonomous Robotics.</p>
+            <div class="contact-info">
+                <a href="mailto:minha0324@korea.ac.kr"><i class="fas fa-envelope"></i></a>
+                <a href="http://linkedin.com/in/minha-lee-b2a594366"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/minha"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <h3>Education</h3>
+
+            <strong class="university-name">Korea University</strong>
+            <p>BS in Computer Science and Engineering (Mar 2022 - Feb 2026) </p>
+            <ul class="nested-list">
+                <li>Major GPA: 4.33/4.5 (<a href="https://drive.google.com/file/d/1tIYx9IypJbPDYfdIPB4y4vApNVdnkwJl/view">link to transcript</a>)</li>
+                <li>Relevant Coursework: Data Structure, Algorithms, Deep Learning, Artificial Intelligence, Natural Language Processing, Introduction to Compute Vision Its Application,
+                    Operating Systems, Interative Visualization, Introduction to Machine Learning</li>
+            </ul>
+
+            <strong class="university-name">University of Washington</strong>
+            <p>Exchange Student in Computer Science and Engineering (Mar 2025 - Jun 2025)</p>
+            <ul class="nested-list">
+                <li>Relevant Coursework: Autonomous Robotics, AI-Robotics</li>
+            </ul>
+            <h3>Research Interests</h3>
+            <p>Computer Vision, 3D, Autonomous Robotics, Machine Learning, Deep Learning</p>
+
+            </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <h3>Research Intern</h3>
+    
+            <div class="experience-item">
+                <strong>Hypermedia Lab, Korea University</strong> (Jan 2023 - Aug 2024)
+                <ul class="nested-list">
+                    <li>Reviewed and summarized research papers on P vs. Np and contributed to writing a related paper.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <strong><a href="https://kuaicv.com" class="no-style-link" target="_blank">Computer Vision Lab, Korea University</a></strong> (Mar 2025 - Present)
+                <ul class="nested-list">
+                    <li>Researched, analyzed, and summarized papers related to 3D Gaussian Splatting.</li>
+                    <li>Investigated recent advancements applicable to ongoing 3D research.</li>
+                    <li>Explored methods to enhance depth estimation performance and experimented with related implementations.</li>
+                </ul>
+            </div>
+    
+            <div class="experience-item">
+                <strong><a href="https://personalrobotics.cs.washington.edu" class="no-style-link" target="_blank">Personal Robotics Lab, University of Washington</a></strong> (Mar 2025 - Present)
+                <ul class="nested-list">
+                    <li>Conducted an in-depth review of 3D Reconstruction paper and analyzed recent research trends.</li>
+                    <li>Worked on 3D Reconstruction research based on BundleSDF.</li>
+                    <li>Built a custom dataset using an Orbbec camera and explored various approaches, 
+                        such as inpainting-based preprocessing, to address occlusion issues in BundleSDF.</li>
+                    <li>Participated in follow-up research using a Real2Sim pipeline, focusing on physical parameter estimation and related tasks.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <h3>Korean Sign Language Translator <a href="https://github.com/mlnha/24-1-sign-language-translation" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
+            <ul class="nested-list">
+                <li>Developed a real-time Korean Sign Language translator using OpenCV and MediaPipe.</li>
+                <li>Preprocessed a sign language video dataset by extracting joint coordinates with MediaPipe and overlaying them on the videos.</li>
+                <li>Built and trained a ViViT-based model for sign language translation.</li>
+                <li>Developed a dictionary-like module for storing word feature representations.</li>
+                <li>Tools Used: Python</li>
+            </ul>
+
+            <h3>Technical Science Expert Question and Answer Model Project</h3>
+            <ul class="nested-list">
+                <li>Developed a question-answering model for technical science.</li>
+                <li>Preprocessed technical science document datasets into SQuAD format.</li>
+                <li>Implemented additional preprocessing steps such as removing HTML tags.</li>
+                <li>Developed evaluation metric code for F1 and EM scores.</li>
+                <li>Built various models including BERT, Longformer, and BART.</li>
+                <li>Conducted experiments comparing these models under multiple hypotheses.</li>
+                <li>Tools Used: Python, PyTorch, Hugging Face</li>
+            </ul>
+
+            <h3>FashionSBIR <a href="https://github.com/mlnha/FashionSBIR" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
+            <ul class="nested-list">
+                <li>Developed a fashion image retrieval system using FashionSBIR dataset.</li>
+                <li>Preprocessed the dataset, including the addition of Canny edge maps.</li>
+                <li>Trained models related to SBIR</li>
+                <li>Tools Used: Python</li>
+            </ul>
+
+            <h3>Cafe Recommendation System <a href="https://github.com/mlnha/24-2-cafe-rec" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
+            <ul class="nested-list">
+                <li>Developed a cafe recommendation system using online cafe reviews and images.</li>
+                <li>Crawled online cafe reviews and images.</li>
+                <li>Trained a cafe image classification model and performed prompting.</li>
+                <li>Tools Used: Python</li>
+            </ul>
+
+            <h3>Predictive Modelling for Online Ad Click Behaviour</h3>
+            <ul class="nested-list">
+                <li>Developed a predictive model for online ad click behavior.</li>
+                <li>Preprocessed the dataset using one-hot encoding.</li>
+                <li>Trained various models including logistic regression, classification trees, and random forests.</li>
+                <li>Evaluated model performance using accuracy, precision, recall, and F1-score.</li>
+                <li>Tools Used: Python</li>
+            </ul>
+
+            <h3>Vision-Based Interior Designer <a href="https://github.com/mlnha/Vision-Based-Interior-Designer" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h3>
+            <ul class="nested-list">
+                <li>Developed a vision-based interior designer.</li>
+                <li>Researched papers and code related to 3D reconstruction and similar projects.</li>
+                <li>Explored and implemented technologies such as DreamGaussian and InstantNeRF.</li>
+                <li>Generated depth maps using Marigold and created meshes from the depth maps.</li>
+                <li>Tools Used: Python</li>
+            </ul>
+
+            <h3>CUT3R-Based Surprise Measurement in General 3D World for Robotic System</h3>
+            <ul class="nested-list">
+                <li>Researched and implemented CUT3R for surprise measurement.</li>
+                <li>Collected and preprocessed real-world video datasets in static indoor and dynamic outdoor environments.</li>
+                <li>Tools Used: Python</li>
+            </ul>
+
+            </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <h3>On hypotheses under which P = NP</h3>
+            <p><strong>Minha Lee</strong>, Soyeon Jeong, Seongbin Park</p>
+            <a href="https://www.viam.science.tsu.ge/cie2023/">CIE2023</a>
+            </section>
+
+        <section id="skills">
+            <h2>Skills & Technologies</h2>
+            <ul class="nested-list">
+                <li><strong>Programming Languages:</strong> Python, C, SQL, C++, HTML, ROS</li>
+                <li><strong>Frameworks & Libraries:</strong> PyTorch, TensorFlow, OpenCV, NumPy, SciPy</li>
+                <li><strong>Tools & Platforms:</strong> Git, Linux, Jupyter Notebook</li>
+                <li><strong>English Skills:</strong> TOEFL ibt 105</li>
+            </ul>
+            </section>
+        
+        <section id="additional-info">
+            <h2>Additional Information</h2>
+            <strong>Extracurricular Activities</strong>
+            <ul class="nested-list">
+                <li>KUCC: Computer Club, Korea University (Sep 2022 - Jun 2023)</li>
+                <li>KWEB: Web Development Club, Korea University (Mar 2023 - Jun 2024)</li>
+                <li>AIKU: Deep Learning Society, Korea University (Dec 2024 - Present)</li>
+            </ul>
+    </main>
+
+    <footer>
+        <p>Last updated in August 2025</p>
+    </footer>
+
+</body>
+</html>
+
+
